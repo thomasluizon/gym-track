@@ -3,8 +3,8 @@ import Wrapper from '@/components/Wrapper'
 
 export default function Page() {
 	return (
-		<Wrapper title="Gym Track">
-			<FontText>(home)</FontText>
+		<Wrapper title="Minha Conta">
+			<FontText>(conta)</FontText>
 		</Wrapper>
 	)
 }
