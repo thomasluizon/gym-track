@@ -1,7 +1,6 @@
-import { Link } from 'expo-router'
 import React from 'react'
-import { Image, StyleSheet, View } from 'react-native'
-import { colors } from 'utils/colors'
+import { StyleSheet, View } from 'react-native'
+import IconRoute from './IconRoute'
 
 const buttons = [
 	{
@@ -29,19 +28,9 @@ const buttons = [
 export default function BottomBar() {
 	return (
 		<View style={styles.container}>
-			{buttons.map(button => {
-				return (
-					<Link href={button.url} key={button.url}>
-						<View style={styles.imgWrapper}>
-							<Image
-								source={button.imgSrc}
-								style={styles.img}
-								resizeMode="contain"
-							/>
-						</View>
-					</Link>
-				)
-			})}
+			{buttons.map(({ url, imgSrc }) => (
+				<IconRoute key={url} url={url} imgSrc={imgSrc} />
+			))}
 		</View>
 	)
 }
@@ -55,14 +44,5 @@ const styles = StyleSheet.create({
 		right: 0,
 		flexDirection: 'row',
 		justifyContent: 'space-evenly',
-	},
-	imgWrapper: {
-		backgroundColor: colors.color4,
-		borderRadius: 50,
-		padding: 10,
-	},
-	img: {
-		height: 40,
-		width: 40,
 	},
 })

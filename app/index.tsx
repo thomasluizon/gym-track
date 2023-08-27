@@ -11,14 +11,14 @@ export default function Page() {
 
 const styles = StyleSheet.create({
 	background: {
-		backgroundColor: colors.color1,
+		backgroundColor: colors.color4,
 		height: '100%',
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
 	title: {
-		color: colors.color4,
+		color: colors.color1,
 		fontSize: 40,
 	},
 })
