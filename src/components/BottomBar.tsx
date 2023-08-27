@@ -5,23 +5,23 @@ import IconRoute from './IconRoute'
 const buttons = [
 	{
 		url: '/workouts',
-		imgSrc: require('../../assets/images/dumbell.png'),
+		imgSrc: require('~/assets/images/dumbell.png'),
 	},
 	{
 		url: '/training',
-		imgSrc: require('../../assets/images/workout.png'),
+		imgSrc: require('~/assets/images/workout.png'),
 	},
 	{
 		url: '/',
-		imgSrc: require('../../assets/images/home.png'),
+		imgSrc: require('~/assets/images/home.png'),
 	},
 	{
 		url: '/evolution',
-		imgSrc: require('../../assets/images/evolution.png'),
+		imgSrc: require('~/assets/images/evolution.png'),
 	},
 	{
 		url: '/account',
-		imgSrc: require('../../assets/images/user.png'),
+		imgSrc: require('~/assets/images/user.png'),
 	},
 ]
 

@@ -7,7 +7,7 @@ export default function FontText(props: {
 	children?: React.ReactNode
 }) {
 	const [fontsLoaded] = useFonts({
-		montserrat: require('../../assets/fonts/montserrat.ttf'),
+		montserrat: require('~/assets/fonts/montserrat.ttf'),
 	})
 
 	if (!fontsLoaded) {
@@ -16,6 +16,7 @@ export default function FontText(props: {
 
 	let style: StyleProp<TextStyle> = {
 		fontFamily: 'montserrat',
+		fontSize: 22,
 	}
 
 	if (props.style) {

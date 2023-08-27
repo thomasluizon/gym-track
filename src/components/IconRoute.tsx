@@ -1,6 +1,6 @@
+import { colors } from '@/utils/colors'
 import { Link } from 'expo-router'
 import { Image, ImageSourcePropType, StyleSheet, View } from 'react-native'
-import { colors } from 'utils/colors'
 
 type Props = {
 	url: string

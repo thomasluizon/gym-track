@@ -1,5 +1,5 @@
+import { colors } from '@/utils/colors'
 import { StyleSheet } from 'react-native'
-import { colors } from './colors'
 
 const styles = StyleSheet.create({
 	background: {
@@ -11,7 +11,13 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		color: colors.color1,
-		fontSize: 40,
+		fontSize: 30,
+		marginBottom: 10,
+		paddingTop: 30,
+	},
+	content: {
+		flex: 1,
+		alignItems: 'center',
 	},
 })
 

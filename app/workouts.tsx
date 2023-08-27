@@ -1,6 +1,6 @@
-import FontText from 'components/FontText'
+import FontText from '@/components/FontText'
+import globalStyles from '@/utils/globalStyle'
 import { View } from 'react-native'
-import globalStyles from 'utils/globalStyle'
 
 export default function Page() {
 	return (
