@@ -2,13 +2,19 @@ import FontText from '@/components/FontText'
 import globalStyles from '@/utils/globalStyle'
 import { View } from 'react-native'
 
-export default function Wrapper() {
+type Props = {
+	children?: React.ReactNode
+	title?: string
+}
+
+export default function Wrapper({ title, children }: Props) {
 	return (
 		<View style={globalStyles.background}>
-			<FontText style={globalStyles.title}>Gym Track</FontText>
-			<View style={globalStyles.content}>
-				<FontText>Teste</FontText>
-			</View>
+			{title ? (
+				<FontText style={globalStyles.title}>{title}</FontText>
+			) : null}
+
+			<View style={globalStyles.content}>{children}</View>
 		</View>
 	)
 }

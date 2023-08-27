@@ -1,11 +1,10 @@
 import FontText from '@/components/FontText'
-import globalStyles from '@/utils/globalStyle'
-import { View } from 'react-native'
+import Wrapper from '@/components/Wrapper'
 
 export default function Page() {
 	return (
-		<View style={globalStyles.background}>
-			<FontText style={globalStyles.title}>Treinar</FontText>
-		</View>
+		<Wrapper title="Treinar">
+			<FontText>(treinar)</FontText>
+		</Wrapper>
 	)
 }
