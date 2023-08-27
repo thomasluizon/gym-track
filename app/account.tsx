@@ -4,7 +4,7 @@ import globalStyles from 'utils/globalStyle'
 export default function Page() {
 	return (
 		<View style={globalStyles.background}>
-			<Text style={globalStyles.title}>Gym Track</Text>
+			<Text style={globalStyles.title}>My Account</Text>
 		</View>
 	)
 }
