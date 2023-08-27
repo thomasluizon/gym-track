@@ -1,10 +1,12 @@
-import { Text, View } from 'react-native'
+import FontText from 'components/FontText'
+import React from 'react'
+import { View } from 'react-native'
 import globalStyles from 'utils/globalStyle'
 
 export default function Page() {
 	return (
 		<View style={globalStyles.background}>
-			<Text style={globalStyles.title}>My Account</Text>
+			<FontText style={globalStyles.title}>Minha Conta</FontText>
 		</View>
 	)
 }
