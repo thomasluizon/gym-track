@@ -1,10 +1,10 @@
-import FontText from '@/components/FontText'
 import Wrapper from '@/components/Wrapper'
+import { Text } from '@gluestack-ui/themed'
 
 export default function Page() {
 	return (
 		<Wrapper title="Gym Track">
-			<FontText>(home)</FontText>
+			<Text>Testando</Text>
 		</Wrapper>
 	)
 }

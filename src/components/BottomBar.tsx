@@ -1,5 +1,5 @@
+import { Box } from '@gluestack-ui/themed'
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
 import IconRoute from './IconRoute'
 
 const buttons = [
@@ -27,22 +27,18 @@ const buttons = [
 
 export default function BottomBar() {
 	return (
-		<View style={styles.container}>
+		<Box
+			padding="$3"
+			position="absolute"
+			bottom={0}
+			left={0}
+			right={0}
+			justifyContent="space-evenly"
+			flexDirection="row"
+		>
 			{buttons.map(({ url, imgSrc }) => (
 				<IconRoute key={url} url={url} imgSrc={imgSrc} />
 			))}
-		</View>
+		</Box>
 	)
 }
-
-const styles = StyleSheet.create({
-	container: {
-		padding: 10,
-		position: 'absolute',
-		bottom: 0,
-		left: 0,
-		right: 0,
-		flexDirection: 'row',
-		justifyContent: 'space-evenly',
-	},
-})

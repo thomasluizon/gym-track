@@ -1,6 +1,4 @@
-import FontText from '@/components/FontText'
-import globalStyles from '@/utils/globalStyle'
-import { View } from 'react-native'
+import { Box, Heading } from '@gluestack-ui/themed'
 
 type Props = {
 	children?: React.ReactNode
@@ -9,12 +7,14 @@ type Props = {
 
 export default function Wrapper({ title, children }: Props) {
 	return (
-		<View style={globalStyles.background}>
+		<Box height="$full" alignItems="center">
 			{title ? (
-				<FontText style={globalStyles.title}>{title}</FontText>
+				<Heading marginVertical="$10" size="2xl" fontWeight="$light">
+					{title}
+				</Heading>
 			) : null}
 
-			<View style={globalStyles.content}>{children}</View>
-		</View>
+			<Box gap="$3">{children}</Box>
+		</Box>
 	)
 }
