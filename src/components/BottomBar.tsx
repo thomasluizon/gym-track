@@ -1,3 +1,4 @@
+import { colorsBlack, colorsLight } from '@/utils/colors'
 import { Box } from '@gluestack-ui/themed'
 import React from 'react'
 import IconRoute from './IconRoute'
@@ -35,6 +36,15 @@ export default function BottomBar() {
 			right={0}
 			justifyContent="space-evenly"
 			flexDirection="row"
+			sx={{
+				_light: {
+					bg: colorsLight.background,
+				},
+				_dark: {
+					bg: colorsBlack.text,
+				},
+			}}
+			borderRadius={'$lg'}
 		>
 			{buttons.map(({ url, imgSrc }) => (
 				<IconRoute key={url} url={url} imgSrc={imgSrc} />
