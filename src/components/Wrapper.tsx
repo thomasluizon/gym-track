@@ -14,7 +14,7 @@ export default function Wrapper({ title, children }: Props) {
 				</Heading>
 			) : null}
 
-			<Box>{children}</Box>
+			<Box gap="$3">{children}</Box>
 		</Box>
 	)
 }

@@ -1,6 +1,7 @@
 import { colors } from '@/utils/colors'
+import { Box, Image } from '@gluestack-ui/themed'
 import { Link } from 'expo-router'
-import { Image, ImageSourcePropType, StyleSheet, View } from 'react-native'
+import { ImageSourcePropType } from 'react-native'
 
 type Props = {
 	url: string
@@ -10,21 +11,9 @@ type Props = {
 export default function IconRoute({ url, imgSrc }: Props) {
 	return (
 		<Link href={url}>
-			<View style={styles.imgWrapper}>
-				<Image source={imgSrc} style={styles.img} resizeMode="contain" />
-			</View>
+			<Box bgColor={colors.color4} borderRadius="$full" padding="$3">
+				<Image source={imgSrc} size="xs" />
+			</Box>
 		</Link>
 	)
 }
-
-const styles = StyleSheet.create({
-	imgWrapper: {
-		backgroundColor: colors.color4,
-		borderRadius: 50,
-		padding: 10,
-	},
-	img: {
-		height: 40,
-		width: 40,
-	},
-})

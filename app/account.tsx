@@ -1,5 +1,5 @@
 import Wrapper from '@/components/Wrapper'
-import { Text } from 'react-native'
+import { Text } from '@gluestack-ui/themed'
 
 export default function Page() {
 	return (
